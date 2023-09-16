@@ -1,3 +1,7 @@
+html {
+  --primary-font-color: #ffffff;
+}
+
 .App {
   text-align: center;
 }

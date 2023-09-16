@@ -1,0 +1,165 @@
+
+/* MAIN STYLES */
+.aside-main {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    padding: 1.5rem 2rem;
+    gap: 20px;
+    /* background-color: blue; */
+}
+.aside-main .video {
+    width: 100%;
+    height: 47vh;
+    border-radius: 30px;
+    background-color: aqua;
+}
+.aside-main .moviepage-details {
+    width: 100%;
+    height: 45vh; /*might do it auto after filling it with content */
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 50px auto; /*might do it auto after filling it with content BASED ON THIS*/
+}
+.aside-main .topper {
+    grid-column: 1/-1;
+    background-color: palegoldenrod;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;  
+}
+.aside-main .left {
+    grid-column: 1/3;
+    background-color: salmon;
+}
+
+/* TEXT STYLES */
+.aside-main .topper-left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 40%; */
+    margin: 0 10px 0 0;
+    font-size: 1rem;
+}
+.aside-main .topper-left > .minor-details {
+    margin-right: 1rem;
+}
+.aside-main [data-testid="movie-title"] {
+    font-size: 1rem;
+    width: 30%;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    flex: 1 1;
+}
+.aside-main ul,
+.aside-main .genres {
+    display: flex;
+}
+
+.aside-main ul {
+    font-size: 1rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topper-left li {
+    margin: 0;
+    padding: 0;
+}
+
+.topper-left li:nth-child(2),
+.topper-left li:nth-child(3) {
+    margin-left: 10px;
+}
+
+.topper-left .genres {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topper-left .genres p {
+    color: rgb(235, 40, 73);
+    border: 1.5px solid rgba(235, 40, 72, 0.486);
+    border-radius: 50px;
+    padding: .5rem .3rem;
+}
+.movie-rating {
+    font-size: 1.4rem;
+}
+.aside-main .movie-rating .faded-text {
+    color: gray;
+}
+
+/* BOTTOM LEFT STYLES */
+.left [data-testid= movie-overview], 
+.left .crew p,
+.aside-main .right p {
+    font-size: 1rem;
+}
+
+.aside-main .left {
+    padding: 0 1rem;
+}
+.left [data-testid= movie-overview] {
+    text-align: left;
+    font-size: 1.1rem;
+}
+.left .crew p {
+    font-size: 1.1rem;
+    text-align: left;
+
+}
+.left .highlighted-text {
+    color: rgb(235, 40, 73);
+}
+
+/* BOTTOM RIGHT STYLES */
+.aside-main .right {
+    padding:  0 1rem;
+    
+}
+.aside-main .right p {
+    padding: .7rem 0;
+}
+.aside-main .right p:first-child {
+    background-color: rgb(235, 40, 73);
+}
+.aside-main .right p:nth-child(2) {
+    background-color: rgb(154, 152, 152);
+}
+.aside-main .right .movie-options {
+    position: relative;
+    height: 60%;
+}
+.aside-main .right .movie-options p {
+    position: absolute;
+    bottom: 0;
+    padding: 1rem 0;
+    margin: 0;
+    width: 100%;
+    background-color: color-mix(in srgb, transparent 50%, black );
+}
+.aside-main .right .movie-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+/* .aside-main .right .movie-options img {
+    display: flex;
+    width: 30%;
+} */
+.aside-main .right .movie-options img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: all 500ms;
+}
+

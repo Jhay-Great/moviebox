@@ -1,0 +1,7 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    /* overflow-x: scroll; */
+    justify-items: center;
+}

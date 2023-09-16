@@ -1,0 +1,16 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+} */
+.aside-container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-auto-rows: auto;
+}
