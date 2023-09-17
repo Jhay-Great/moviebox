@@ -1,0 +1,43 @@
+/* CARD CONTAINER */
+[data-testid="movie-card"] {
+    border-radius: 30px;
+    width: clamp(75%,80%, 90%);
+    /* background-color: blue; */
+    height: min(400px);
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* IMAGE */
+[data-testid="movie-poster"] {
+    /* border-radius: inherit; */
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+    width: 100%;
+    max-height: 70%;
+    overflow: hidden;
+    margin: 0 0 1.5rem;
+    /* background-color: purple; */
+}
+.card-poster { 
+    width: inherit;
+}
+
+/* TITLE  */
+[data-testid="movie-title"] {
+    font-size: 1.1rem;
+    word-spacing: 2px;
+    letter-spacing: .5px;
+    font-weight: 800;
+    margin: 0 0 .5rem;
+    padding: 0 1.5rem;
+}
+
+/* DATE */
+[data-testid="movie-release-date"] {
+    padding: 0 1.5rem;
+    font-weight: 500;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}

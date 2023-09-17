@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 // import './App.css';
-import { Header } from '../components/component-header/component-header';
-import { Main } from '../components/component-main/component-main';
-import { Footer } from '../components/component-footer/component-footer';
-import ErrMessage from '../components/component-main/errMessage';
+import { Header } from '../components/homepage-component/homepage-header/component-header';
+import { Main } from '../components/homepage-component/homepage-main/component-main';
+import { Footer } from '../components/homepage-component/homepage-footer/component-footer';
+import ErrMessage from '../components/homepage-component/homepage-main/errMessage';
 
 class Homepage extends Component {
   constructor() {

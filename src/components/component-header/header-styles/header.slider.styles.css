@@ -1,8 +1,0 @@
-img {
-    position: absolute;
-    width: 100%;
-    height: inherit;
-    object-fit: cover;
-    object-position: top;
-    transition: all 500ms;
-}
