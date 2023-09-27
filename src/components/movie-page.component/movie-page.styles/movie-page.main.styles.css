@@ -12,19 +12,19 @@
     width: 100%;
     height: 47vh;
     border-radius: 30px;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 .aside-main .moviepage-details {
     width: 100%;
     height: 45vh; /*might do it auto after filling it with content */
-    background-color: red;
+    /* background-color: red; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 50px auto; /*might do it auto after filling it with content BASED ON THIS*/
 }
 .aside-main .topper {
     grid-column: 1/-1;
-    background-color: palegoldenrod;
+    /* background-color: palegoldenrod; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,7 +32,7 @@
 }
 .aside-main .left {
     grid-column: 1/3;
-    background-color: salmon;
+    /* background-color: salmon; */
 }
 
 /* TEXT STYLES */

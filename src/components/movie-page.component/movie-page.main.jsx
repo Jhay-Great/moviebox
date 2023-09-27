@@ -6,7 +6,7 @@ import img from '../component-extra/img.jpg';
 
 const Main = function ({data}) {
 
-    console.log(data.release_date)
+    // console.log(data.release_date)
     // console.log(Date.UTC(data.release_date + '').split('-').join(', '))
 
     
@@ -17,7 +17,7 @@ const Main = function ({data}) {
         <section className="video">
             {/* {data.poster_path} */}
         
-            <img src={`https://image.tmdb.org/t/p/w1280/${data.poster_path}`} alt={data.original_title} />
+            <img src={`https://image.tmdb.org/t/p/w500/${data.poster_path}`} alt={data.original_title} />
 
         </section>
         <section className="moviepage-details">
@@ -59,13 +59,13 @@ const Main = function ({data}) {
             <div className="left">
                 <p data-testid="movie-overview"> {data.overview}?</p>
                 <div className="crew">
-                    <p>John john: <span className="highlighted-text">Dave Malone</span></p>
-                    <p>John john: <span className="highlighted-text">Dave Malone</span></p>
-                    <p>John john: <span className="highlighted-text">Dave Malone</span></p>
+                    <p>Director: <span className="highlighted-text">Joseph Kosinski</span></p>
+                    <p>Writer: <span className="highlighted-text">Jim Cash, Jack Epps Jr, Peter Craig</span></p>
+                    {/* <p>Stars: <span className="highlighted-text">Miles Teller</span></p> */}
                 </div>
-                <select name="" id=""> <span>Top rated movie #65</span>
+                {/* <select name="" id=""> <span>Top rated movie #65</span>
                     <option value="">Awards 9 nominations</option>
-                </select>
+                </select> */}clea
             </div>
             <div className="right">
                 <p>See Showtimes</p>
